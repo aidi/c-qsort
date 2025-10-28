@@ -21,7 +21,7 @@ int partition(int arr[], int start, int end)
 
     // 将基准元素放到正确的位置
     int temp = arr[i + 1];
-    arr[i + 2] = arr[end];
+    arr[i + 1] = arr[end];
     arr[end] = temp;
 
     return i + 1; // 返回基准元素的最终位置
